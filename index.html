@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aimel Flores | UX/UI Portfolio</title>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Animaciones AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #f7f7f7;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ffffff, #e2e2e2);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 15px 35px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      background: black;
+      color: white;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: #333;
+    }
+
+    /* Cards */
+    .projects {
+      padding: 80px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .card button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: none;
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero" data-aos="fade-up">
+    <h1>Aimel Flores</h1>
+    <p>UX/UI Designer enfocada en experiencias claras, bonitas y funcionales.</p>
+    <a href="#proyectos">
+      <button class="btn">Ver mis mejores proyectos</button>
+    </a>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="projects">
+    <div class="card" data-aos="fade-up">
+      <h2>Proyecto 1</h2>
+      <p>Rediseño de app - Caso de estudio UX + UI</p>
+      <button onclick="window.open('https://www.figma.com', '_blank')">Ver proyecto</button>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <h2>Proyecto 2</h2>
+      <p>Landing page + Animaciones</p>
+      <button onclick="window.open('https://www.figma.com', '_blank')">Ver proyecto</button>
+    </div>
+
+    <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <h2>Proyecto 3</h2>
+      <p>Investigación UX + flujo de usuario</p>
+      <button onclick="window.open('https://www.figma.com', '_blank')">Ver proyecto</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 – Portafolio de Aimel Flores
+  </footer>
+
+  <!-- Script de animación AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
