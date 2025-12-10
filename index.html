@@ -1,146 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aimel Flores | UX/UI Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio – Aimel Flores</title>
 
-  <!-- Tipografía -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- ESTILOS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #222;
+        }
 
-  <!-- Animaciones AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #f7f7f7;
-    }
+        h1 {
+            margin-bottom: 10px;
+            font-size: 36px;
+        }
 
-    /* Hero */
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(135deg, #ffffff, #e2e2e2);
-      text-align: center;
-    }
+        p {
+            max-width: 600px;
+            margin: auto;
+        }
 
-    h1 {
-      font-size: 3rem;
-      margin: 0;
-      font-weight: 600;
-    }
+        .boton-proyectos {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 26px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
 
-    p {
-      font-size: 1.2rem;
-      opacity: 0.8;
-    }
+        .contenedor {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+        }
 
-    .btn {
-      margin-top: 30px;
-      padding: 15px 35px;
-      border-radius: 30px;
-      border: none;
-      cursor: pointer;
-      font-size: 1.1rem;
-      background: black;
-      color: white;
-      transition: 0.3s;
-    }
+        .proyecto {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+        }
 
-    .btn:hover {
-      transform: scale(1.05);
-      background: #333;
-    }
+        .proyecto h3 {
+            margin: 0 0 10px 0;
+        }
 
-    /* Cards */
-    .projects {
-      padding: 80px 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    }
-
-    .card button {
-      margin-top: 15px;
-      padding: 10px 20px;
-      border-radius: 20px;
-      border: none;
-      background: black;
-      color: white;
-      cursor: pointer;
-    }
-
-    footer {
-      margin-top: 50px;
-      padding: 40px;
-      text-align: center;
-      font-size: 0.9rem;
-      opacity: 0.6;
-    }
-  </style>
+        .proyecto a {
+            color: #0066ff;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero" data-aos="fade-up">
-    <h1>Aimel Flores</h1>
-    <p>UX/UI Designer enfocada en experiencias claras, bonitas y funcionales.</p>
-    <a href="#proyectos">
-      <button class="btn">Ver mis mejores proyectos</button>
-    </a>
-  </section>
+    <!-- HEADER -->
+    <header>
+        <h1>Aimel Flores</h1>
+        <p>Diseñadora UX/UI y creativa digital.  
+           Aquí puedes ver mis últimos proyectos.</p>
 
-  <!-- PROYECTOS -->
-  <section id="proyectos" class="projects">
-    <div class="card" data-aos="fade-up">
-      <h2>Proyecto 1</h2>
-      <p>Rediseño de app - Caso de estudio UX + UI</p>
-      <button onclick="window.open('https://www.figma.com', '_blank')">Ver proyecto</button>
+        <!-- 🔥 EL BOTÓN QUE FALTABA -->
+        <a href="#proyectos" class="boton-proyectos">Ver mis proyectos</a>
+    </header>
+
+    <!-- PROYECTOS -->
+    <div class="contenedor" id="proyectos">
+
+        <div class="proyecto">
+            <h3>Proyecto 1 – App de Salud</h3>
+            <p>Diseño UX/UI para una app enfocada en bienestar.</p>
+            <a href="https://www.figma.com/file/XXXXXXXXXXXX" target="_blank">
+                Ver en Figma →
+            </a>
+        </div>
+
+        <div class="proyecto">
+            <h3>Proyecto 2 – Dashboard Profesional</h3>
+            <p>Diseño de dashboard moderno para manejo de datos.</p>
+            <a href="https://www.figma.com/file/YYYYYYYYYYYY" target="_blank">
+                Ver en Figma →
+            </a>
+        </div>
+
+        <div class="proyecto">
+            <h3>Proyecto 3 – Landing Page</h3>
+            <p>Página web en estilo minimalista.</p>
+            <a href="https://www.figma.com/file/ZZZZZZZZZZZZ" target="_blank">
+                Ver en Figma →
+            </a>
+        </div>
+
     </div>
-
-    <div class="card" data-aos="fade-up" data-aos-delay="200">
-      <h2>Proyecto 2</h2>
-      <p>Landing page + Animaciones</p>
-      <button onclick="window.open('https://www.figma.com', '_blank')">Ver proyecto</button>
-    </div>
-
-    <div class="card" data-aos="fade-up" data-aos-delay="400">
-      <h2>Proyecto 3</h2>
-      <p>Investigación UX + flujo de usuario</p>
-      <button onclick="window.open('https://www.figma.com', '_blank')">Ver proyecto</button>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 – Portafolio de Aimel Flores
-  </footer>
-
-  <!-- Script de animación AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 
 </body>
 </html>
